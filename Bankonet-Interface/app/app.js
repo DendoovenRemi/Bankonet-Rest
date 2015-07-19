@@ -1,29 +1,29 @@
 "use strict"
-angular.module("client-rest", ["ngRoute]")
 
-.config(function($routeProvider){
+angular.module("client-rest", ["ngRoute"])
+.value("version", "1.0")
+
+.config(function($routeProvider) {
 	$routeProvider
-	.when("/employelist",{
-		templateUrl : "views/employelist.html",
+	.when("/employeslist", {
+		templateUrl: "views/employeslist.html",
 		controller: "EmployesListController",
-		controllerAs : "employeslist"
-
+		controllerAs: "employesList"
 	})
 
-	.when("/employe",{
-		templateUrl : "views/employe.html",
+	.when("/employe", {
+		templateUrl: "views/employe.html",
 		controller: "EmployeController",
-		controllerAs : "employe"
-
+		controllerAs: "employe"
 	})
-	.when("/createEmploye",{
-		templateUrl : "views/createEmploye.html",
+
+	.when("/createEmploye", {
+		templateUrl: "views/createEmploye.html",
 		controller: "CreateEmployeController",
-		controllerAs : "createEmploye"
-
+		controllerAs: "createEmploye"
 	})
+
 	.otherwise({
 		redirectTo: "/"
 	})
-
 })

@@ -1,0 +1,12 @@
+<form name="createEmployeForm" ng-submit="createEmploye.addEmploye(createEmployeForm)" novalidate>
+	<p>
+		<label>Nom: </label>
+		<input ng-model="createEmploye.emp.nom">
+	</p>
+	<p>
+		<label>Prénom: </label>
+		<input ng-model="createEmploye.emp.prenom">
+	</p>
+	<input type="submit" value="Envoyer">
+</form>
+{{ createEmploye.emp }}

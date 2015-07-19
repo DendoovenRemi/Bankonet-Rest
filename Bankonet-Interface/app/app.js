@@ -16,7 +16,7 @@ angular.module("client-rest", ["ngRoute]")
 		controllerAs : "employe"
 
 	})
-	.when("/employe",{
+	.when("/createEmploye",{
 		templateUrl : "views/createEmploye.html",
 		controller: "CreateEmployeController",
 		controllerAs : "createEmploye"

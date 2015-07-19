@@ -1,0 +1,10 @@
+<form name="parIdForm" ng-submit = "employe.getEmployeById()" novalidate>
+	<p>
+		<label>ID:</label>
+		<input ng-model="employe.id">
+		<input type="submit" value="Envoyer">
+	</p>
+</form>
+<p>ID : {{ employe.emp.id }}</p>
+<p>Nom : {{ employe.emp.nom }}</p>
+<p>Prénom : {{ employe.emp.prenom }}</p>
